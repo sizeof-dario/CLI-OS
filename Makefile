@@ -6,8 +6,8 @@ AS = nasm
 LD = ld
 
 # Flags
-CCFLAGS = -ffreestanding -mno-red-zone -mno-mmx -mno-sse -mno-sse2 -nostdlib -m64 -O0 -Wall -Wextra -Werror -g
-ASFLAGS = -f elf64
+CCFLAGS = -ffreestanding -mno-mmx -mno-sse -mno-sse2 -nostdlib -m32 -O0 -Wall -Wextra -Werror -g
+ASFLAGS = -f elf32
 LDFLAGS = -T linker.ld -nostdlib
 
 # Directories
